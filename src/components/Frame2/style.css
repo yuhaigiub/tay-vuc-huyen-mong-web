@@ -12,6 +12,7 @@
 	width: 580px;
 	aspect-ratio: 580/156;
 	margin-inline: auto;
+	outline: 1px solid red;
 }
 
 #frame2-info {
@@ -21,6 +22,7 @@
 	aspect-ratio: 325/758;
 	margin-left: 230px;
 	position: relative;
+	outline: 1px solid red;
 }
 
 .frame2-swiper-character {

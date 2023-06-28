@@ -84,9 +84,11 @@ export function runFrame1() {
 
 	function trackFirstMovement(e) {
 		if (!firstActionState) {
+			console.log(e.key);
 			if (e.type === "keydown" && excludedKeys.includes(e.key)) {
 				return;
 			}
+
 			audio.play();
 			firstActionState = true;
 			musicState = !musicState;

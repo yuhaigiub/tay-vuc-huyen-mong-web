@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import { animateCSS, isInView } from "../../import_assets";
 
 export function runFrame2() {
 	const frame2CharacterSwiper = new Swiper(".frame2-swiper-character", {
@@ -34,4 +35,23 @@ export function runFrame2() {
 		decorBalls.eq(2).show();
 		frame2CharacterSwiper.slideTo(1);
 	});
+}
+
+export function checkInViewFrame2(e) {
+	const frame2Info = $("#frame2-info");
+	const frame2Swiper = $(".frame2-swiper-character");
+	const frame2Video = $("#frame2-video-container");
+
+	if (isInView(frame2Info)) {
+		frame2Info.show();
+		frame2Swiper.show();
+		frame2Video.show();
+		console.log("in view");
+		animateCSS(frame2Info, "animate__fadeInLeftBig");
+		animateCSS(frame2Swiper, "animate__fadeInUpBig");
+		animateCSS(frame2Video, "animate__fadeInRightBig");
+
+		window.removeEventListener("load", checkInViewFrame2);
+		window.removeEventListener("scroll", checkInViewFrame2);
+	}
 }

@@ -6,9 +6,7 @@ export function initiatePopup() {
 		});
 	});
 	const cancelButton = $("#popup-dangky #dangky-cancel-button");
-	console.log("cancelButton");
 	cancelButton.on("click", function (event) {
-		console.log("hello");
 		$.fancybox.close();
 	});
 }

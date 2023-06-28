@@ -34,20 +34,26 @@ import "./components/Footer/style.css";
 import { initiatePopup } from "./components/Popup";
 
 import { runFrame1 } from "./components/Frame1";
-import { runFrame2 } from "./components/Frame2";
+import { runFrame2, checkInViewFrame2 } from "./components/Frame2";
 import { runFrame3 } from "./components/Frame3";
 import { runFrame5 } from "./components/Frame5";
 
 $(function () {
 	// ready
 
+	window.addEventListener("load", checkInViewFrame2);
+	window.addEventListener("scroll", checkInViewFrame2);
+
+	//
+
 	const outerRoot = document.getElementById("outer-root");
 	const root = document.getElementById("root");
 
 	document.body.style.padding = 0;
 	document.body.style.margin = 0;
-	document.body.style.overflowX = "hidden";
+	document.body.style.width = "100vw";
 	document.body.style.height = "100vh";
+	document.body.style.overflowX = "hidden";
 
 	outerRoot.style.width = "fit-content";
 	outerRoot.style.overflow = "hidden";
