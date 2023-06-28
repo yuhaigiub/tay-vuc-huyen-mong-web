@@ -17,8 +17,9 @@ import "./components/Popup/popup-general.css";
 import "./components/Popup/components/DangKy/style.css";
 import "./components/Popup/components/TheLe/style.css";
 
+import "./components/HeaderMobile/style.css";
+
 import "./components/Frame1/style.css";
-import "./components/Frame1/style-mobile.css";
 
 import "./components/Frame2/style.css";
 import "./components/Frame2/style-mobile.css";
@@ -33,10 +34,12 @@ import "./components/Footer/style.css";
 
 import { initiatePopup } from "./components/Popup";
 
+import { runHeaderMobile } from "./components/HeaderMobile";
 import { runFrame1 } from "./components/Frame1";
 import { runFrame2, checkInViewFrame2 } from "./components/Frame2";
 import { runFrame3 } from "./components/Frame3";
 import { runFrame5 } from "./components/Frame5";
+import { event } from "jquery";
 
 $(function () {
 	// ready
@@ -44,8 +47,11 @@ $(function () {
 	window.addEventListener("load", checkInViewFrame2);
 	window.addEventListener("scroll", checkInViewFrame2);
 
-	//
+	// custom
+	const mobileHeaderContainer = $("#mobile-header-container").get(0);
+	mobileHeaderContainer.style.transformOrigin = "top left";
 
+	//
 	const outerRoot = document.getElementById("outer-root");
 	const root = document.getElementById("root");
 
@@ -81,9 +87,11 @@ $(function () {
 		outerRoot.style.height = `${desiredHeight}px`;
 
 		root.style.transform = `scale(${ratioW}, ${ratioH})`;
+		mobileHeaderContainer.style.transform = `scale(${ratioW}, ${ratioH})`;
 	}
 
 	initiatePopup();
+	runHeaderMobile();
 	runFrame1();
 	runFrame2();
 	runFrame3();
@@ -91,9 +99,8 @@ $(function () {
 
 	window.addEventListener("load", scaleRoot);
 	window.addEventListener("resize", scaleRoot);
-	window.addEventListener("click", () => {
-		const fancyboxContainer = document.querySelector(".fancybox-container");
-		if (fancyboxContainer) {
-		}
+
+	window.addEventListener("click", (e) => {
+		console.log(e.target);
 	});
 });

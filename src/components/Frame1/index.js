@@ -2,33 +2,6 @@ import videoBg from "./assets/frame1_bg_video.mp4";
 
 export function runFrame1() {
 	let firstActionState = false;
-	const seeMoreMobile = $("#frame1-see-more-button-mobile");
-	const hiddenMobile = $("#frame1-hidden-mobile");
-
-	// hiddenMobile.on("click", function (event) {
-	// 	event.stopPropagation();
-	// });
-
-	let menuState = seeMoreMobile.attr("active") === "true";
-	let transitioning = false;
-
-	seeMoreMobile.on("click", function (event) {
-		if (transitioning) return;
-		menuState = !menuState;
-		seeMoreMobile.attr("active", menuState);
-
-		if (menuState) {
-			transitioning = true;
-			hiddenMobile.slideDown(350, function () {
-				transitioning = false;
-			});
-		} else {
-			transitioning = true;
-			hiddenMobile.slideUp(350, function () {
-				transitioning = false;
-			});
-		}
-	});
 
 	// video bg
 	const video = $("#frame1-container video").get(0);
