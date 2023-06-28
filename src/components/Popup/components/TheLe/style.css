@@ -1,0 +1,23 @@
+#popup-thele {
+	width: fit-content;
+	background-color: transparent;
+}
+
+/* 722 x 78 */
+#thele-title {
+	background-image: url("../assets/popup_thele_title.png");
+	width: 37.604166666666664vw;
+	aspect-ratio: 722/78;
+	background-size: 100% 100%;
+	/* 14px */
+	margin-top: 1.2962962962962963vh;
+	margin-inline: auto;
+}
+
+@media screen and (max-width: 750px) {
+	/* 722 x 78 */
+	#thele-title {
+		width: 96.26666666666667vw;
+		aspect-ratio: 722/78;
+	}
+}

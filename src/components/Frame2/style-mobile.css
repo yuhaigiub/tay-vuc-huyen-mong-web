@@ -1,0 +1,15 @@
+#frame2-video-button-mobile {
+	display: none;
+	background-image: url("./assets/mobile/frame2_video_button.jpg");
+	width: 220px;
+	height: 113px;
+	position: absolute;
+	left: 35px;
+	bottom: 59px;
+	z-index: 10;
+}
+@media screen and (max-width: 750px) {
+	#frame2-video-button-mobile {
+		display: block;
+	}
+}

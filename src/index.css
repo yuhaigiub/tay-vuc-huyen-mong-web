@@ -1,0 +1,46 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden !important;
+	height: 100vh;
+}
+
+* {
+	font-family: "Nanum Gothic", sans-serif;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+#outer-root {
+	width: fit-content;
+	overflow: hidden;
+}
+
+#root {
+	width: 1920px;
+}
+
+@media screen and (max-width: 750px) {
+	#root {
+		width: 750px;
+	}
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+input {
+	border: none;
+}
+
+@keyframes infinite-spin {
+	0% {
+		rotate: 0;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}

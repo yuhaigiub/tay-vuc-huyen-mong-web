@@ -1,0 +1,111 @@
+#popup-dangky {
+	width: fit-content;
+	background-color: transparent;
+}
+
+#dangky-input-container {
+	display: flex;
+	flex-direction: column;
+	/* 34px */
+	gap: 3.148148148148148vh;
+	/* 89px */
+	margin-top: 8.24074074074074vh;
+	/* 175px */
+	margin-left: 9.114583333333332vw;
+}
+
+#name-input,
+#id-input,
+#server-input {
+	background-image: url("../../assets/popup_input_bg.jpg");
+	width: 48.645833333333336vw;
+	aspect-ratio: 934/75;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 1.09375vw;
+	font-size: 3.3333333333333335vh;
+}
+
+#dangky-button-container {
+	/* 66px */
+	margin-top: 6.111111111111111vh;
+	display: flex;
+	/* 110px */
+	gap: 5.729166666666666vw;
+	/* 320px */
+	margin-left: 16.666666666666664vw;
+}
+
+#dangky-cancel-button {
+	background-image: url("../assets/popup_cancel_button.png");
+	width: 14.166666666666666vw;
+	aspect-ratio: 272/76;
+	background-size: 100% 100%;
+}
+
+#dangky-ok-button {
+	background-image: url("../assets/popup_ok_button.png");
+	width: 14.166666666666666vw;
+	aspect-ratio: 272/76;
+	background-size: 100% 100%;
+}
+
+/* 722 x 78 */
+#dangky-title {
+	background-image: url("../assets/popup_dangky_title.png");
+	width: 37.604166666666664vw;
+	aspect-ratio: 722/78;
+	background-size: 100% 100%;
+	/* 14px */
+	margin-top: 1.2962962962962963vh;
+	margin-inline: auto;
+}
+
+@media screen and (max-width: 750px) {
+	/* 722 x 78 */
+	#dangky-title {
+		width: 96.26666666666667vw;
+		aspect-ratio: 722/78;
+	}
+
+	#dangky-input-container {
+		display: flex;
+		flex-direction: column;
+		/* 25px */
+		gap: 1.6545334215751157vh;
+		/* 93px */
+		margin-top: 6.154864328259431vh;
+		/* 10px */
+		margin-left: 1.3333333333333335vw;
+	}
+
+	#name-input,
+	#id-input,
+	#server-input {
+		background-image: url("../../assets/popup_input_bg.jpg");
+		/* 713px */
+		width: 95.06666666666666vw;
+		aspect-ratio: 713/98;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+		padding-left: 2.8000000000000003vw;
+		font-size: 1.8530774321641297vh;
+	}
+
+	#dangky-ok-button,
+	#dangky-cancel-button {
+		width: 35.46666666666667vw;
+	}
+
+	#dangky-button-container {
+		/* 128px */
+		margin-top: 8.471211118464593vh;
+		/* 110px */
+		gap: 5.729166666666666vw;
+		/* 45px */
+		margin-left: 0;
+		justify-content: center;
+	}
+}

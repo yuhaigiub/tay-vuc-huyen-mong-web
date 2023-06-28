@@ -1,0 +1,132 @@
+#header-mobile {
+	display: none;
+	width: 750px;
+}
+
+#non-hidden-mobile {
+	height: 73px;
+	padding-left: 14px;
+	padding-right: 7px;
+	background-color: rgb(21, 21, 24);
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+}
+
+#frame1-header-left-mobile {
+	display: flex;
+	gap: 6px;
+}
+
+#frame1-favicon-mobile {
+	background-image: url("./assets/mobile/Favicon.png");
+	width: 99px;
+	height: 99px;
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+
+#frame1-18t-mobile {
+	background-image: url("./assets/frame1_18t.jpg");
+	width: 107px;
+	height: 56px;
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+
+#frame1-header-right-mobile {
+	display: flex;
+	gap: 11px;
+	margin-top: 6px;
+}
+
+#frame1-home-button-mobile {
+	background-image: url("./assets/mobile/frame1_menu_home_mobile.jpg");
+	width: 158px;
+	height: 60px;
+}
+
+#frame1-fanpage-button-mobile {
+	background-image: url("./assets/mobile/frame1_menu_fanpage_mobile.jpg");
+	width: 158px;
+	height: 60px;
+}
+
+#frame1-see-more-button-mobile {
+	width: 61px;
+	height: 60px;
+	margin-left: 40px;
+}
+
+#frame1-see-more-button-mobile[active="false"] {
+	background-image: url("./assets/mobile/frame1_menu_see_more_close_mobile.jpg");
+}
+
+#frame1-see-more-button-mobile[active="true"] {
+	background-image: url("./assets/mobile/frame1_menu_see_more_open_mobile.jpg");
+}
+
+#frame1-music-button-mobile {
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 80px;
+	right: 7px;
+}
+
+#frame1-music-button-mobile[active="false"] {
+	background-image: url("./assets/frame1_menu_music_off.png");
+}
+
+#frame1-music-button-mobile[active="true"] {
+	background-image: url("./assets/frame1_menu_music_on.png");
+}
+
+#frame1-hidden-mobile {
+	display: none;
+	background-image: url("./assets/mobile/frame1_menu_hidden_bg.png");
+	width: 750px;
+	height: 359px;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	z-index: 1;
+}
+
+#frame1-hidden-mobile-button-container {
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	translate: -50% 0;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+#frame1-hidden-mobile-button-container button {
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+#frame1-download-button-mobile {
+	display: none;
+	background-image: url("./assets/mobile/frame1_download_button_mobile.png");
+	width: 364px;
+	height: 98px;
+	position: absolute;
+	bottom: 37px;
+	left: 202px;
+}
+
+@media screen and (max-width: 750px) {
+	#header-mobile {
+		display: block;
+	}
+
+	#frame1-download-button-mobile {
+		display: block;
+	}
+}

@@ -1,0 +1,12 @@
+.fancybox-slide {
+	padding-inline: 0 !important;
+}
+
+.fancybox-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.fancybox-content {
+	padding: 0 !important;
+}

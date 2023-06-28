@@ -1,0 +1,179 @@
+#frame2-container {
+	background-image: url("./assets/frame2_bg.jpg");
+	width: 1920px;
+	height: 1081px;
+	position: relative;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+#frame2-title {
+	background-image: url("./assets/frame2_title.png");
+	width: 580px;
+	aspect-ratio: 580/156;
+	margin-inline: auto;
+}
+
+#frame2-info {
+	background-image: url("./assets/frame2_info.png");
+	width: 325px;
+	height: 758px;
+	aspect-ratio: 325/758;
+	margin-left: 230px;
+	position: relative;
+}
+
+.frame2-swiper-character {
+	width: 1228px;
+	height: 1441px;
+	/* outline: 5px solid red; */
+	top: 10px;
+	left: 340px;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#frame2-character-display {
+	width: 1228px;
+	height: 1441px;
+}
+
+#frame2-character-display[gender="male"] {
+	background-image: url("./assets/frame2_male_character.png");
+	top: 50px;
+	left: 30px;
+}
+
+#frame2-character-display[gender="female"] {
+	background-image: url("./assets/frame2_female_character.png");
+}
+
+#frame2-video-container {
+	background-image: url("./assets/frame2_video_bg.png");
+	width: 1034px;
+	height: 692px;
+	position: absolute;
+	right: 0;
+	top: 216px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#frame2-video-container video {
+	width: 98%;
+	height: 96%;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+#frame2-button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	position: absolute;
+	right: -20px;
+	z-index: 100;
+}
+
+.decor-ball {
+	background-image: url("./assets/frame2_gender_button_ellipse.png");
+	width: 9px;
+	height: 9px;
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+#decor-ball-1 {
+	top: -6px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+#decor-ball-2 {
+	top: calc(50% - 12px);
+	left: 50%;
+	translate: -50% -50%;
+}
+
+#decor-ball-3 {
+	top: calc(50% + 12px);
+	left: 50%;
+	translate: -50% -50%;
+}
+
+#decor-ball-4 {
+	bottom: -6px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+#frame2-male-button,
+#frame2-female-button {
+	width: 48px;
+	height: 68px;
+	font-weight: bold;
+}
+
+:is(#frame2-male-button, #frame2-female-button)[active="true"] {
+	background-image: url("./assets/frame2_gender_button_active.png");
+	color: rgb(255, 255, 255);
+}
+
+:is(#frame2-male-button, #frame2-female-button)[active="false"] {
+	background-image: url("./assets/frame2_gender_button.png");
+	color: rgb(140, 27, 13);
+}
+
+@media screen and (max-width: 750px) {
+	#frame2-container {
+		width: 750px;
+		height: 1209px;
+		background-image: url("./assets/mobile/frame2_bg_mobile.jpg");
+	}
+
+	#frame2-video-container {
+		display: none;
+	}
+
+	#frame2-info {
+		width: 325px;
+		margin-top: 45px;
+		margin-left: 17px;
+	}
+
+	.frame2-swiper-character {
+		width: 639px;
+		height: 1140px;
+		top: 200px;
+		right: 0;
+		left: unset;
+	}
+
+	#frame2-character-display[gender="male"] {
+		top: 0;
+		left: 0;
+	}
+
+	#frame2-character-display[gender="female"] {
+		top: 0;
+		left: 0;
+	}
+
+	#frame2-character-display {
+		width: 639px;
+		height: 1140px;
+		top: 200px;
+		left: unset;
+		right: 0;
+	}
+
+	#frame2-character-display[gender="male"] {
+		background-image: url("./assets/mobile/frame2_male_character_mobile.png");
+	}
+
+	#frame2-character-display[gender="female"] {
+		background-image: url("./assets/mobile/frame2_female_character_mobile.png");
+	}
+}

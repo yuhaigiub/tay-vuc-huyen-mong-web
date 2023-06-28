@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<audio>
+			<source
+				src="//img.zing.vn/products/nmgh/landing/2022-tay-vuc-huyen-mong/prod/nmgh_tayvuc/header/images/music.mp3"
+				type="audio/mp3" />
+		</audio>
+		<div id="outer-root">
+			<div id="root">
+				<%-include('components/Frame1/index.ejs') %>
+				<%-include('components/Frame2/index.ejs') %>
+				<%-include('components/Frame3/index.ejs') %>
+				<%-include('components/Frame4/index.ejs') %>
+				<%-include('components/Frame5/index.ejs') %>
+				<%-include('components/Footer/index.ejs') %>
+			</div>
+		</div>
+		<%-include('./components/Popup/components/DangKy/index.ejs') %>
+		<%-include('./components/Popup/components/TheLe/index.ejs') %>
+	</body>
+</html>

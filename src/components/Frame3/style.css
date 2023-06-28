@@ -1,0 +1,113 @@
+#frame3-container {
+	background-image: url("./assets/frame3_bg.jpg");
+	width: 1920px;
+	height: 1081px;
+	position: relative;
+	padding-top: 40px;
+}
+
+#frame3-title {
+	background-image: url("./assets/frame3_title.png");
+	width: 722px;
+	height: 161px;
+	margin-inline: auto;
+}
+
+.frame3-swiper {
+	width: 1460px;
+	height: 720px;
+	/* outline: 5px solid red; */
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	translate: -50% 0;
+	overflow: hidden;
+}
+
+.frame3-slide {
+	width: 1068px !important;
+	height: 605px !important;
+	background-image: url("./assets/frame3_banner_bg.png");
+}
+
+.frame3-swiper .swiper-pagination {
+	bottom: 0;
+}
+
+.frame3-swiper .swiper-pagination-bullet {
+	background-image: url("./assets/frame3_bullet.png");
+	width: 34px;
+	height: 34px;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.frame3-swiper .swiper-pagination-bullet-active {
+	background-image: url("./assets/frame3_bullet_selected.png");
+	width: 34px;
+	height: 34px;
+	background-color: transparent;
+}
+
+.frame3-swiper :is(.swiper-button-prev, .swiper-button-next) {
+	width: 103px;
+	height: 110px;
+	top: calc(605px / 2 - 34px / 2);
+}
+
+.frame3-swiper :is(.swiper-button-prev, .swiper-button-next)::after {
+	display: none;
+}
+
+.frame3-swiper .swiper-button-prev {
+	background-image: url("./assets/frame3_prev_button.png");
+}
+
+.frame3-swiper .swiper-button-next {
+	background-image: url("./assets/frame3_next_button.png");
+}
+
+.frame3-slide-img {
+	display: block;
+}
+
+.frame3-slide-img-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+	#frame3-container {
+		background-image: url("./assets/mobile/frame3_bg_mobile.jpg");
+		width: 750px;
+		height: 1150px;
+	}
+
+	.frame3-swiper {
+		width: 715px !important;
+		height: 810px !important;
+	}
+
+	.frame3-slide {
+		width: 574px !important;
+		height: 682px !important;
+		overflow: hidden;
+		background-size: 100% 100%;
+	}
+
+	.frame3-slide-active {
+		width: 1068px !important;
+		height: 650px !important;
+	}
+
+	.frame3-swiper :is(.swiper-button-prev, .swiper-button-next) {
+		display: none;
+	}
+
+	.frame3-slide-img {
+		display: none;
+	}
+
+	.frame3-slide-img-mobile {
+		display: block;
+	}
+}
