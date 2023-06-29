@@ -26,28 +26,36 @@
 }
 
 .frame2-swiper-character {
-	width: 1228px;
+	/* 1228 x 1441 */
+	width: 500px;
 	height: 1441px;
 	/* outline: 5px solid red; */
 	top: 10px;
-	left: 340px;
+	left: 700px;
 	position: absolute;
 	z-index: 1;
-	overflow: hidden;
 }
 
-#frame2-character-display {
+.frame2-swiper-character .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#frame2-male-character,
+#frame2-female-character {
+	flex-shrink: 0;
 	width: 1228px;
 	height: 1441px;
 }
 
-#frame2-character-display[gender="male"] {
+#frame2-male-character {
 	background-image: url("./assets/frame2_male_character.png");
-	top: 50px;
-	left: 30px;
+	/* top: 50px;
+	left: 30px; */
 }
 
-#frame2-character-display[gender="female"] {
+#frame2-female-character {
 	background-image: url("./assets/frame2_female_character.png");
 }
 
@@ -76,7 +84,7 @@
 	gap: 24px;
 	position: absolute;
 	right: -20px;
-	z-index: 100;
+	z-index: 1000;
 }
 
 .decor-ball {
@@ -116,6 +124,8 @@
 	width: 48px;
 	height: 68px;
 	font-weight: bold;
+	position: relative;
+	z-index: 1000;
 }
 
 :is(#frame2-male-button, #frame2-female-button)[active="true"] {
