@@ -11,6 +11,11 @@ export function runFrame2() {
 		fadeEffect: {
 			crossFade: true,
 		},
+		on: {
+			slideChange: function () {
+				swiperAnimation.init(this).animate();
+			},
+		},
 	});
 
 	// buttons and decor balls
