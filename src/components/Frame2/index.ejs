@@ -1,6 +1,6 @@
 <div id="frame2-container" class="container-type">
 	<div id="frame2-title"></div>
-	<div id="frame2-info" hidden>
+	<div id="frame2-info">
 		<div id="frame2-button-container">
 			<div class="decor-ball" id="decor-ball-1"></div>
 			<button id="frame2-male-button" active="true">Thành Nam</button>
@@ -10,19 +10,29 @@
 			<div class="decor-ball" id="decor-ball-4"></div>
 		</div>
 	</div>
-	<div class="frame2-swiper-character" hidden>
+	<div class="frame2-swiper-character">
 		<div class="swiper-wrapper">
-			<div
-				id="frame2-character-display"
-				gender="male"
-				class="swiper-slide"></div>
-			<div
-				id="frame2-character-display"
-				gender="female"
-				class="swiper-slide"></div>
+			<div class="swiper-slide">
+				<div
+					data-swiper-animation="animate__fadeInUpBig"
+					data-duration=".5s"
+					data-swiper-out-animation="animate__fadeOut"
+					data-out-duration=".2s"
+					id="frame2-character-display"
+					gender="male"></div>
+			</div>
+			<div class="swiper-slide">
+				<div
+					data-swiper-animation="animate__fadeInUpBig"
+					data-duration=".5s"
+					data-swiper-out-animation="animate__fadeOut"
+					data-out-duration=".2s"
+					id="frame2-character-display"
+					gender="female"></div>
+			</div>
 		</div>
 	</div>
-	<div id="frame2-video-container" style="display: none">
+	<div id="frame2-video-container">
 		<video autoplay muted loop>
 			<source
 				src="//img.zing.vn/products/nmgh/landing/2022-tay-vuc-huyen-mong/prod/nmgh_tayvuc/new_char/video-mp.mp4"

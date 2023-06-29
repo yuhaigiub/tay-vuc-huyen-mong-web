@@ -1,3 +1,27 @@
+import "./index.css";
+import "./custom-fancybox.css";
+
+import "./components/Popup/popup-general.css";
+import "./components/Popup/components/DangKy/style.css";
+import "./components/Popup/components/TheLe/style.css";
+
+import "./components/HeaderMobile/style.css";
+
+import "./components/Frame1/style.css";
+
+import "./components/Frame2/style.css";
+import "./components/Frame2/style-mobile.css";
+
+import "./components/Frame3/style.css";
+import "./components/Frame4/style.css";
+
+import "./components/Frame5/style.css";
+import "./components/Frame5/style-mobile.css";
+
+import "./components/Footer/style.css";
+
+//
+
 import "animate.css";
 
 import "@fancyapps/fancybox";
@@ -22,27 +46,25 @@ Swiper.use([Navigation, Pagination, EffectCoverflow, EffectFade]);
 $.fancybox.defaults.arrows = false;
 $.fancybox.defaults.smallBtn = false;
 
-export function isInView(elem, full = false) {
+export function isInView(elem, root, full = false) {
 	if (typeof jQuery === "function" && elem instanceof jQuery) {
 		elem = elem[0];
 	}
 
-	const viewHeight = $(window).height();
-	const docViewTop = $(window).scrollTop();
+	const viewHeight = root.height();
+	const docViewTop = root.scrollTop();
 	const docViewBottom = docViewTop + viewHeight;
 
 	const elemHeight = $(elem).height();
 	const elemTop = $(elem).offset().top;
 	const elemBottom = elemTop + elemHeight;
 
-	console.log(docViewTop, docViewBottom, elemTop, elemBottom);
-
 	if (full) {
 		return elemBottom <= docViewBottom && elemTop >= docViewTop;
 	} else {
 		return (
-			(elemBottom >= docViewTop && elemTop <= docViewBottom) ||
-			(elemTop <= docViewBottom && elemTop >= docViewTop)
+			(elemTop >= docViewTop && elemTop <= docViewBottom) ||
+			(elemBottom >= docViewTop && elemBottom <= docViewBottom)
 		);
 	}
 }

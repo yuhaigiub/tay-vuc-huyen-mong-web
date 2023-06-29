@@ -74,5 +74,5 @@ export function runFrame1() {
 	}
 
 	window.addEventListener("click", trackFirstMovement);
-	window.addEventListener("keydown", trackFirstMovement);
+	// window.addEventListener("keydown", trackFirstMovement);
 }
