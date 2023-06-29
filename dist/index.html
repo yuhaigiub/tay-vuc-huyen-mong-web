@@ -6,28 +6,30 @@
 		<title>Document</title>
 	<script defer src="main.bundle.js"></script><script defer src="runtime.bundle.js"></script><script defer src="assets.bundle.js"></script></head>
 	<body>
+		<a id="back-to-top-button" href="#"></a>
+
 		<div id="mobile-header-container" style="position: fixed; top: 0; left: 0; z-index: 50; width: 750px">
 			<header id="header-mobile">
 	<div id="non-hidden-mobile">
 		<div id="header-header-left-mobile">
-			<div id="header-favicon-mobile"></div>
+			<a id="header-favicon-mobile" href="#"></a>
 			<div id="header-18t-mobile"></div>
-			<div id="header-small-logo-mobile"></div>
+			<a id="header-small-logo-mobile" href="#"></a>
 		</div>
-		<div id="header-header-right-mobile">
-			<button id="header-home-button-mobile"></button>
-			<button id="header-fanpage-button-mobile"></button>
-			<button id="header-see-more-button-mobile" active="false"></button>
+		<nav id="header-header-right-mobile">
+			<a id="header-home-button-mobile" href="#"></a>
+			<a id="header-fanpage-button-mobile" href="#"></a>
+			<a id="header-see-more-button-mobile" active="false" href="#"></a>
 			<button id="header-music-button-mobile" active="false"></button>
-		</div>
+		</nav>
 	</div>
 	<div id="header-hidden-mobile">
-		<div id="header-hidden-mobile-button-container">
-			<button>Group</button>
-			<button>Youtube</button>
-			<button>Tiktok</button>
-			<button>Lên đầu trang</button>
-		</div>
+		<nav id="header-hidden-mobile-button-container">
+			<a href="#">Group</a>
+			<a href="#">Youtube</a>
+			<a href="#">Tiktok</a>
+			<a href="#">Lên đầu trang</a>
+		</nav>
 	</div>
 </header>
 
@@ -39,55 +41,44 @@
 		</audio>
 		<div id="outer-root">
 			<div id="root">
-				<div id="frame1-container" class="container-type">
+				<section id="frame1-container" class="container-type">
 	<video muted autoplay loop></video>
 	<header id="header">
 		<div id="frame1-header-left">
 			<div id="frame1-18t"></div>
-			<div id="frame1-small-logo"></div>
+			<a id="frame1-small-logo" href="#"></a>
 		</div>
 		<div id="frame1-header-right">
-			<div id="frame1-menu-container">
-				<button id="frame1-menu-home-button">TRANG CHỦ</button>
+			<nav id="frame1-menu-container">
+				<a id="frame1-menu-home-button" href="#">TRANG CHỦ</a>
 				<div>
-					<button
-						class="frame1-menu-button"
-						id="frame1-menu-fb-button"></button>
-					<button
-						class="frame1-menu-button"
-						id="frame1-menu-group-button"></button>
-					<button
-						class="frame1-menu-button"
-						id="frame1-menu-play-button"></button>
+					<a class="frame1-menu-button" id="frame1-menu-fb-button" href="#"></a>
+					<a class="frame1-menu-button" id="frame1-menu-group-button" href="#"></a>
+					<a class="frame1-menu-button" id="frame1-menu-play-button" href="#"></a>
 				</div>
-			</div>
+			</nav>
 			<button id="frame1-music-button" active="false"></button>
 		</div>
 	</header>
 	<div id="frame1-title">
-		<a
-			data-fancybox="youtube"
-			href="https://www.youtube.com/watch?v=qCw1v9_ZI3k">
-			<div id="frame1-big-play-button">
-				<button id="frame1-big-play-button-spin"></button>
-			</div>
+		<a data-fancybox="youtube" href="https://www.youtube.com/watch?v=qCw1v9_ZI3k">
+			<span id="frame1-big-play-button"> <button id="frame1-big-play-button-spin"></button> </span>
 		</a>
 	</div>
 	<div id="frame1-download-container">
-		<button id="frame1-download-pc"></button>
+		<a id="frame1-download-pc" href="#"></a>
 		<div>
-			<button id="frame1-download-ios"></button>
-			<button id="frame1-download-android"></button>
+			<a id="frame1-download-ios" href="#"></a>
+			<a id="frame1-download-android" href="#"></a>
 		</div>
-		<button id="frame1-napthe">
-			<div></div>
-		</button>
+		<a id="frame1-napthe" href="#">
+			<span></span>
+		</a>
 	</div>
-	<button id="frame1-download-button-mobile"></button>
-</div>
-
-				<div id="frame2-container" class="container-type">
-	<div id="frame2-title"></div>
+	<a id="frame1-download-button-mobile" href="#"></a>
+</section>
+ <section id="frame2-container" class="container-type">
+	<h2 id="frame2-title"></h2>
 	<div id="frame2-info">
 		<div id="frame2-button-container">
 			<div class="decor-ball" id="decor-ball-1"></div>
@@ -100,24 +91,26 @@
 	</div>
 	<div class="frame2-swiper-character">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide">
+			<figure class="swiper-slide">
 				<div
 					data-swiper-animation="animate__fadeInUpBig"
 					data-duration=".5s"
-					data-swiper-out-animation="animate__fadeOut"
-					data-out-duration=".2s"
+					data-delay="0s"
+					data-swiper-out-animation="animate__fadeOutDownBig"
+					data-out-duration=".5s"
 					id="frame2-character-display"
 					gender="male"></div>
-			</div>
-			<div class="swiper-slide">
+			</figure>
+			<figure class="swiper-slide">
 				<div
 					data-swiper-animation="animate__fadeInUpBig"
 					data-duration=".5s"
-					data-swiper-out-animation="animate__fadeOut"
-					data-out-duration=".2s"
+					data-delay="0s"
+					data-swiper-out-animation="animate__fadeOutDownBig"
+					data-out-duration=".5s"
 					id="frame2-character-display"
 					gender="female"></div>
-			</div>
+			</figure>
 		</div>
 	</div>
 	<div id="frame2-video-container">
@@ -130,119 +123,91 @@
 	<a data-fancybox="youtube" href="https://www.youtube.com/watch?v=ML1LehoFRgU">
 		<button id="frame2-video-button-mobile"></button>
 	</a>
-</div>
+</section>
 
-				<div id="frame3-container" class="container-type">
-	<div id="frame3-title"></div>
+				<section id="frame3-container" class="container-type">
+	<h2 id="frame3-title"></h2>
 	<div class="frame3-swiper">
 		<div class="swiper-wrapper">
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Tây Vực Huyễn Mộng - Già Lam Xuất Thế.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Tây Vực Huyễn Mộng - Già Lam Xuất Thế.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Tây Vực Huyễn Mộng - Già Lam Xuất Thế.png" />
 				</a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/Tây Vực huyễn mộng - Già Lam xuất thế.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/Tây Vực huyễn mộng - Già Lam xuất thế.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/Tây Vực huyễn mộng - Già Lam xuất thế.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Map mới Tây Vực.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Map mới Tây Vực.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Map mới Tây Vực.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/bản đồ Tây Vực.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/bản đồ Tây Vực.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/bản đồ Tây Vực.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Tính năng mới Thần Cơ Vạn Trượng.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Tính năng mới Thần Cơ Vạn Trượng.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Tính năng mới Thần Cơ Vạn Trượng.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/Tính năng mới Thần Cơ Vạn Tượng.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/Tính năng mới Thần Cơ Vạn Tượng.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/Tính năng mới Thần Cơ Vạn Tượng.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Cốt truyện mới.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Cốt truyện mới.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Cốt truyện mới.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/cốt truyện mới.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/cốt truyện mới.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/cốt truyện mới.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Phó bản mới Đào Hoa Nguyên.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Phó bản mới Đào Hoa Nguyên.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Phó bản mới Đào Hoa Nguyên.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/Phó bản mới Đào Hoa Nguyên.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/Phó bản mới Đào Hoa Nguyên.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/Phó bản mới Đào Hoa Nguyên.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Khinh công mới.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Khinh công mới.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Khinh công mới.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/Khinh công mới.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/Khinh công mới.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/Khinh công mới.png"
 				/></a>
 			</div>
 			<div class="frame3-slide swiper-slide">
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/test/Hẹn ước tri kỉ.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/test/Hẹn ước tri kỉ.png">
 					<img
 						class="lazyload frame3-slide-img"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/test/Hẹn ước tri kỉ.png"
 				/></a>
-				<a
-					data-fancybox
-					href="//img.zing.vn/upload/nmgh/source/Static/mb/Hẹn ước tri kỷ.png">
+				<a data-fancybox href="//img.zing.vn/upload/nmgh/source/Static/mb/Hẹn ước tri kỷ.png">
 					<img
 						class="lazyload frame3-slide-img-mobile"
 						data-src="//img.zing.vn/upload/nmgh/source/Static/mb/Hẹn ước tri kỷ.png"
@@ -250,77 +215,59 @@
 			</div>
 		</div>
 		<div class="swiper-pagination"></div>
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
+		<button class="swiper-button-prev"></button>
+		<button class="swiper-button-next"></button>
 	</div>
-</div>
-
-				<div id="frame4-container" class="container-type">
-	<div id="frame4-title"></div>
+</section>
+ <section id="frame4-container" class="container-type">
+	<h2 id="frame4-title"></h2>
 	<div id="frame4-button-container">
-		<button
-			class="frame4-button frame4-button-green"
-			data-fancybox
-			data-options='{"buttons":[]}'
-			href="#popup-thele">
+		<a class="frame4-button frame4-button-green" data-fancybox data-options='{"buttons":[]}' href="#popup-thele">
 			Thể Lệ
-		</button>
-		<button class="frame4-button frame4-button-green">Phần Thưởng</button>
-		<button
-			class="frame4-button frame4-button-yellow"
-			data-fancybox
-			data-options='{"buttons":[]}'
-			href="#popup-dangky">
+		</a>
+		<a class="frame4-button frame4-button-green" href="#">Phần Thưởng</a>
+		<a class="frame4-button frame4-button-yellow" data-fancybox data-options='{"buttons":[]}' href="#popup-dangky">
 			Đăng Ký
-		</button>
-		<button class="frame4-button frame4-button-green">Lịch Trình</button>
-		<button class="frame4-button frame4-button-green">Chiến Độ</button>
+		</a>
+		<a class="frame4-button frame4-button-green"  href="#">Lịch Trình</a>
+		<a class="frame4-button frame4-button-green"  href="#">Chiến Độ</a>
 	</div>
 	<div id="frame4-button-container-mobile">
-		<button
-			class="frame4-button frame4-button-green"
-			data-fancybox
-			data-options='{"buttons":[]}'
-			href="#popup-thele">
+		<a class="frame4-button frame4-button-green" data-fancybox data-options='{"buttons":[]}' href="#popup-thele">
 			Thể Lệ
-		</button>
-		<button class="frame4-button frame4-button-green">Phần Thưởng</button>
-		<button
-			class="frame4-button frame4-button-yellow"
-			data-fancybox
-			data-options='{"buttons":[]}'
-			href="#popup-dangky">
+		</a>
+		<a class="frame4-button frame4-button-green"  href="#">Phần Thưởng</button>
+		<a class="frame4-button frame4-button-yellow" data-fancybox data-options='{"buttons":[]}' href="#popup-dangky">
 			Đăng Ký
-		</button>
-		<button class="frame4-button frame4-button-green">Lịch Trình</button>
-		<button class="frame4-button frame4-button-green">Chiến Độ</button>
+		</a>
+		<a class="frame4-button frame4-button-green"  href="#">Lịch Trình</a>
+		<a class="frame4-button frame4-button-green"  href="#">Chiến Độ</a>
 	</div>
-</div>
+</section>
 
-				<div id="frame5-container" class="container-type">
-	<div id="frame5-title"></div>
+				<section id="frame5-container" class="container-type">
+	<h2 id="frame5-title"></h2>
 	<div id="frame5-button-container">
-		<div class="frame5-button"></div>
-		<div class="frame5-button"></div>
-		<div class="frame5-button"></div>
-		<div class="frame5-button"></div>
-		<div class="frame5-button"></div>
-		<div class="frame5-button"></div>
+		<a class="frame5-button" href="#"></a>
+		<a class="frame5-button" href="#"></a>
+		<a class="frame5-button" href="#"></a>
+		<a class="frame5-button" href="#"></a>
+		<a class="frame5-button" href="#"></a>
+		<a class="frame5-button" href="#"></a>
 	</div>
 	<div id="frame5-button-container-mobile" class="frame5-swiper">
 		<div class="swiper-wrapper">
-			<div class="frame5-slide swiper-slide"></div>
-			<div class="frame5-slide swiper-slide"></div>
-			<div class="frame5-slide swiper-slide"></div>
-			<div class="frame5-slide swiper-slide"></div>
-			<div class="frame5-slide swiper-slide"></div>
-			<div class="frame5-slide swiper-slide"></div>
+			<a class="frame5-slide swiper-slide" href="#"></a>
+			<a class="frame5-slide swiper-slide" href="#"></a>
+			<a class="frame5-slide swiper-slide" href="#"></a>
+			<a class="frame5-slide swiper-slide" href="#"></a>
+			<a class="frame5-slide swiper-slide" href="#"></a>
+			<a class="frame5-slide swiper-slide" href="#"></a>
 		</div>
 		<div class="swiper-pagination"></div>
 	</div>
-</div>
-
-				<footer>
+</section>
+ <footer>
 	<div id="frame5-text-container">
 		<p>Công ty Cổ phần VNG</p>
 		<p>
@@ -334,6 +281,8 @@
 		<div id="footer-button">ĐIỀU KHOẢN TRÒ CHƠI</div>
 	</div>
 </footer>
+
+				<a id="back-to-top-button" href="#"></a>
 
 			</div>
 		</div>

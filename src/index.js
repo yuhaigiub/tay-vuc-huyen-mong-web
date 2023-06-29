@@ -31,7 +31,7 @@ $(function () {
 	document.body.style.padding = 0;
 	document.body.style.margin = 0;
 	document.body.style.width = "100vw";
-	document.body.style.height = "100vh";
+	document.body.style.height = "fit-content";
 	document.body.style.overflowX = "hidden";
 
 	outerRoot.style.width = "fit-content";
@@ -100,10 +100,7 @@ $(function () {
 		const frame4ButtonContainer = $("#frame4-button-container");
 		const frame4Buttons = $("#frame4-button-container .frame4-button");
 
-		if (
-			isInView(frame4ButtonContainer, $(window)) &&
-			$(window).width() >= 750
-		) {
+		if (isInView(frame4ButtonContainer, $(window)) && $(window).width() >= 750) {
 			frame4Buttons.hide();
 			frame4Buttons.each(function (index, element) {
 				setTimeout(() => {
@@ -121,10 +118,7 @@ $(function () {
 		const frame5ButtonContainer = $("#frame5-button-container");
 		const frame5Buttons = $("#frame5-button-container .frame5-button");
 
-		if (
-			isInView(frame5ButtonContainer, $(window)) &&
-			$(window).width() >= 750
-		) {
+		if (isInView(frame5ButtonContainer, $(window)) && $(window).width() >= 750) {
 			frame5Buttons.hide();
 			frame5Buttons.each(function (index, element) {
 				setTimeout(() => {

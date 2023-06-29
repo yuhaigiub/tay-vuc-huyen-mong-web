@@ -1,0 +1,31 @@
+body > #back-to-top-button {
+	background-image: url("./assets/back_to_top_button.png");
+	width: 73px;
+	height: 73px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 99;
+}
+
+#root #back-to-top-button {
+	display: none;
+	background-image: url("./assets/back_to_top_button.png");
+	width: 73px;
+	height: 73px;
+	position: absolute;
+	bottom: calc(308px + 50px);
+	left: 50%;
+	translate: -50% 0;
+	z-index: 99;
+}
+
+@media screen and (max-width: 750px) {
+	body > #back-to-top-button {
+		display: none;
+	}
+
+	#root #back-to-top-button {
+		display: block;
+	}
+}

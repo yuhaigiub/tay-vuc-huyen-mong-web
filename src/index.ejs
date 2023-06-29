@@ -6,6 +6,7 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<%-include('components/BackToTop/index.ejs') %>
 		<div id="mobile-header-container" style="position: fixed; top: 0; left: 0; z-index: 50; width: 750px">
 			<%-include('components/HeaderMobile/index.ejs') %>
 		</div>
@@ -16,12 +17,10 @@
 		</audio>
 		<div id="outer-root">
 			<div id="root">
-				<%-include('components/Frame1/index.ejs') %>
-				<%-include('components/Frame2/index.ejs') %>
-				<%-include('components/Frame3/index.ejs') %>
-				<%-include('components/Frame4/index.ejs') %>
-				<%-include('components/Frame5/index.ejs') %>
-				<%-include('components/Footer/index.ejs') %>
+				<%-include('components/Frame1/index.ejs') %> <%-include('components/Frame2/index.ejs') %>
+				<%-include('components/Frame3/index.ejs') %> <%-include('components/Frame4/index.ejs') %>
+				<%-include('components/Frame5/index.ejs') %> <%-include('components/Footer/index.ejs') %>
+				<%-include('components/BackToTop/index.ejs') %>
 			</div>
 		</div>
 		<%-include('./components/Popup/components/DangKy/index.ejs') %>

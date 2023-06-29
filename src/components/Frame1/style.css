@@ -178,7 +178,7 @@
 	position: relative;
 }
 
-#frame1-napthe > div {
+#frame1-napthe > span {
 	background-image: url("./assets/frame1_napthe.png");
 	width: 135px;
 	height: 129.5px;

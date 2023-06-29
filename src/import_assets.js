@@ -1,6 +1,8 @@
 import "./index.css";
 import "./custom-fancybox.css";
 
+import "./components/BackToTop/style.css";
+
 import "./components/Popup/popup-general.css";
 import "./components/Popup/components/DangKy/style.css";
 import "./components/Popup/components/TheLe/style.css";
@@ -35,12 +37,7 @@ import "swiper/css/effect-fade";
 
 import "lazysizes";
 
-import Swiper, {
-	Navigation,
-	Pagination,
-	EffectCoverflow,
-	EffectFade,
-} from "swiper";
+import Swiper, { Navigation, Pagination, EffectCoverflow, EffectFade } from "swiper";
 Swiper.use([Navigation, Pagination, EffectCoverflow, EffectFade]);
 
 $.fancybox.defaults.arrows = false;
@@ -63,8 +60,7 @@ export function isInView(elem, root, full = false) {
 		return elemBottom <= docViewBottom && elemTop >= docViewTop;
 	} else {
 		return (
-			(elemTop >= docViewTop && elemTop <= docViewBottom) ||
-			(elemBottom >= docViewTop && elemBottom <= docViewBottom)
+			(elemTop >= docViewTop && elemTop <= docViewBottom) || (elemBottom >= docViewTop && elemBottom <= docViewBottom)
 		);
 	}
 }
