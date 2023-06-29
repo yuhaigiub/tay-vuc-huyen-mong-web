@@ -69,3 +69,12 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+[data-scroll-watch] {
+	opacity: 0;
+}
+
+.scroll-watch-in-view,
+.scroll-watch-ignore {
+	opacity: 1;
+}

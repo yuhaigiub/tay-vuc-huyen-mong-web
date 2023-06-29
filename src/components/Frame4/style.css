@@ -60,6 +60,10 @@
 	display: none;
 }
 
+#frame4-button-container a {
+	--animate-delay: 10s;
+}
+
 @media screen and (max-width: 750px) {
 	#frame4-container {
 		background-image: url("./assets/mobile/frame4_bg_mobile.jpg");
