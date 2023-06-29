@@ -12,7 +12,7 @@ import { initiatePopup } from "./components/Popup";
 
 import { runHeaderMobile } from "./components/HeaderMobile";
 import { runFrame1 } from "./components/Frame1";
-import { runFrame2, checkInViewFrame2 } from "./components/Frame2";
+import { runFrame2 } from "./components/Frame2";
 import { runFrame3 } from "./components/Frame3";
 import { runFrame5 } from "./components/Frame5";
 import { isInView, animateCSS } from "./import_assets";
