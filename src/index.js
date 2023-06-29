@@ -24,6 +24,8 @@ $(function () {
 	const mobileHeaderContainer = $("#mobile-header-container").get(0);
 	mobileHeaderContainer.style.transformOrigin = "top left";
 
+	const backToTop = $("#back-to-top-button").get(0);
+
 	//
 	const outerRoot = document.getElementById("outer-root");
 	const root = document.getElementById("root");
@@ -60,6 +62,7 @@ $(function () {
 
 		root.style.transform = `scale(${ratioW}, ${ratioH})`;
 		mobileHeaderContainer.style.transform = `scale(${ratioW}, ${ratioH})`;
+		backToTop.style.transform = `scale(${ratioW}, ${ratioH})`;
 	}
 
 	initiatePopup();
