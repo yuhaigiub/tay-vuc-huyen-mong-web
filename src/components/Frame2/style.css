@@ -163,12 +163,18 @@
 		left: unset;
 	}
 
-	#frame2-character-display[gender="male"] {
+	#frame2-male-character {
+		background-image: url("./assets/mobile/frame2_male_character_mobile.png");
+		width: 639px;
+		height: 1140px;
 		top: 0;
 		left: 0;
 	}
 
-	#frame2-character-display[gender="female"] {
+	#frame2-female-character {
+		background-image: url("./assets/mobile/frame2_female_character_mobile.png");
+		width: 639px;
+		height: 1140px;
 		top: 0;
 		left: 0;
 	}
